@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="22656091_Doan Thi Thao_Tuan06" content="Javascrip cơ bản ">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <table>
+            <tr>
+                <td colspan="2" class="fs-4 fw-bold text-info" >THONG TIN DANG NHAP</td>
+            </tr>
+            <tr>
+                <td>UserName</td>
+                <td>YourName</td>
+            </tr>
+            <tr>
+                <td id="tt1"></td>
+                <td id="tt2"></td>
+            </tr>
+        </table>
+
+        <script>
+            document.getElementById("tt1").innerHTML = localStorage.getItem("YourName");
+            document.getElementById("tt2").innerHTML = localStorage.getItem("YourPWD");
+        </script>
+    </div>
+</body>
+
+</html>
